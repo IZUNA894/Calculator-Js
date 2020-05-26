@@ -1,0 +1,120 @@
+<html>
+    <head>
+        <!-- istalling materliaze css? -->
+        <!-- Compiled and minified CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+        <!-- Compiled and minified JavaScript -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <!-- custom css -->
+        <link rel="stylesheet" href="index.css">
+        <!-- using font awesome -->
+        <script src="https://use.fontawesome.com/releases/v5.10.2/js/all.js" data-auto-a11y="true"></script>
+
+
+    </head>
+    <body>
+        <div class="container">
+            <div class="card">
+                <div class="card-content">
+                    <div class='container yellow darken-1 label'>
+                        <div class="row center">
+                            <div class="col s12 center"><h1 class="flow-text center heading">Calculator Js</h1></div>
+            
+                        </div>
+                    </div>
+                    <div class='container red calc'>
+                        <div class="row" style='height:5rem;'>
+                            <div class="col s12" style="">
+                                <p class="flow-text result" id='result'>0</p>
+                            </div>
+                        </div>
+                        <!-- numpad -->
+                        <div class="row numpad">
+                            <div class="row">
+                                <div class="col s3 cell">
+                                    <a onclick='onClearClick()' class="waves-effect waves-light btn">C</a>
+                                </div>
+                                <div class="col s3 cell">
+                                    <a onclick='onNegateClick()' class="waves-effect waves-light btn">+/-</a>
+                                </div>
+                                <div class="col s3 cell">
+                                    <a onclick='onBSClick()' class="waves-effect waves-light btn">BS</a>
+                                </div>
+                                <div class="col s3 cell">
+                                    <a onclick='onOpClick("/")' class="waves-effect waves-light btn">/</a>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col s3 cell">
+                                    <a onclick='onNumkeyClick("7")' class="waves-effect waves-light btn">7</a>
+                                </div>
+                                <div class="col s3 cell">
+                                    <a onclick='onNumkeyClick("8")' class="waves-effect waves-light btn">8</a>
+                                </div>
+                                <div class="col s3 cell">
+                                    <a onclick='onNumkeyClick("9")' class="waves-effect waves-light btn">9</a>
+                                </div>
+                                <div class="col s3 cell">
+                                    <a onclick='onOpClick("*")' class="waves-effect waves-light btn">x</a>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col s3 cell">
+                                    <a onclick='onNumkeyClick("4")' class="waves-effect waves-light btn">4</a>
+                                </div>
+                                <div class="col s3 cell">
+                                    <a onclick='onNumkeyClick("5")' class="waves-effect waves-light btn">5</a>
+                                </div>
+                                <div class="col s3 cell">
+                                    <a onclick='onNumkeyClick("6")' class="waves-effect waves-light btn">6</a>
+                                </div>
+                                <div class="col s3 cell">
+                                    <a onclick='onOpClick("-")' class="waves-effect waves-light btn">-</a>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col s3 cell">
+                                    <a onclick='onNumkeyClick("1")' class="waves-effect waves-light btn">1</a>
+                                </div>
+                                <div class="col s3 cell">
+                                    <a onclick='onNumkeyClick("2")' class="waves-effect waves-light btn">2</a>
+                                </div>
+                                <div class="col s3 cell">
+                                    <a onclick='onNumkeyClick("3")' class="waves-effect waves-light btn">3</a>
+                                </div>
+                                <div class="col s3 cell">
+                                    <a onclick='onOpClick("+")' class="waves-effect waves-light btn">+</a>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col s3 cell">
+                                    <a onclick='onNumkeyClick("0")' class="waves-effect waves-light btn">0</a>
+                                </div>
+                                <div class="col s3 cell">
+                                    <a onclick='' class="waves-effect waves-light btn">0</a>
+                                </div>
+                                <div class="col s3 cell">
+                                    <a onclick='onNumkeyClick(".")' class="waves-effect waves-light btn">.</a>
+                                </div>
+                                <div class="col s3 cell">
+                                    <a onclick='onEqualClick()' class="waves-effect waves-light btn">=</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            
+                </div>
+            </div>
+        </div>
+
+        <div class="container .footer">
+            <div class="row center">
+                <div class="col s12 center">Made with <i class="fas fa-heart" style='color:red;font-size: 20px;'></i> by Tony</div>
+            </div>
+        </div>
+        
+        <script src="index.js"></script>
+    </body>
+</html>

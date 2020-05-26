@@ -1,0 +1,43 @@
+.card{
+    margin-top: 8vh;
+}
+.label{
+    margin-top: 2vh;
+    width:30%;
+}
+.center{
+    align-items: center;
+    text-align: center;
+}
+.heading{
+    margin: 2vh;
+}
+.calc{
+    width:25%;
+}
+.result{
+    text-align: right;
+    float: right;
+}
+.numpad{
+    margin-bottom: 0;
+}
+.row .cell{
+    padding-left: 0;
+    padding-right: 0;
+    background-color: #ffff00;
+}
+
+.btn{
+    width:99%;
+    height: 4rem;
+}
+.numpad .row{
+    margin-bottom: 2px;
+    height: 4rem;
+}
+.footer{
+    position: relative;
+    margin-bottom: 0px;
+    bottom:0px;
+}
